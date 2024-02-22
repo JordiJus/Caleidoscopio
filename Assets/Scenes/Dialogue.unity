@@ -258,10 +258,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 551728412}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -291, y: 80}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 102.68179, y: 75.18605}
+  m_SizeDelta: {x: 154.86, y: 49.627808}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &549449905
 MonoBehaviour:
@@ -396,10 +396,10 @@ RectTransform:
   - {fileID: 552023050}
   m_Father: {fileID: 73387032}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -152}
-  m_SizeDelta: {x: 832.6715, y: 233.9542}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: 137}
+  m_SizeDelta: {x: -347.3285, y: 233.9542}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &551728413
 Animator:
@@ -494,9 +494,9 @@ RectTransform:
   - {fileID: 1677485120}
   m_Father: {fileID: 551728412}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 321, y: -89}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -92, y: 24}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &552023051
@@ -720,9 +720,9 @@ RectTransform:
   - {fileID: 968661619}
   m_Father: {fileID: 73387032}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000097752, y: 152}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0.0000097752, y: -137}
   m_SizeDelta: {x: 384.8102, y: 97.5596}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &915266343
@@ -734,14 +734,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 915266341}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c40f14283b9f734b955707e1e410e81, type: 3}
+  m_Script: {fileID: 11500000, guid: abec64df0c324414db4d48404e6746de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
     name: Hollis
     sentences:
-    - I love you Lespere
-    - Let's marry
+    - Te amo Lespere
+    - Vamos a casarnos
 --- !u!114 &915266344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1002,10 +1002,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 551728412}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5, y: -6.4501}
-  m_SizeDelta: {x: 792, y: 112.9003}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 331.8747, y: -10.6205}
+  m_SizeDelta: {x: 613.2458, y: 112.0598}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1526376586
 MonoBehaviour:
@@ -1369,7 +1369,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1768452051}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 935ebc7d46b4c53499530c5e293746e8, type: 3}
+  m_Script: {fileID: 11500000, guid: 03660376eff59b847a7e3816e401d8f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: {fileID: 549449905}
