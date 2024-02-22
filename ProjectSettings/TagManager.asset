@@ -4,7 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Hay
+  - DialogueManager
+  - Asteroid
   layers:
   - Default
   - TransparentFX
