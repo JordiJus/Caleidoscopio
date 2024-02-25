@@ -3,11 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class Dialogue {
+[CreateAssetMenu]
+public class Dialogue : ScriptableObject
+{
 
-	public string name;
+    [System.Serializable]
+    public class Sentence
+    {
+        public string name;
+        [TextArea(3, 10)]
+        public string text;
+    }
 
-	[TextArea(3, 10)]
-	public string[] sentences;
+    public List<Sentence> sentences = new List<Sentence>();
 
 }

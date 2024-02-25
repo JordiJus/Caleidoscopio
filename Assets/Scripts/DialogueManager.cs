@@ -4,63 +4,75 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class DialogueManager : MonoBehaviour {
+public class DialogueManager : MonoBehaviour
+{
 
-	public TMP_Text nameText;
-	public TMP_Text dialogueText;
+    public TMP_Text nameText;
+    public TMP_Text dialogueText;
 
-	public Animator animator;
+    public Animator animator;
 
-	private Queue<string> sentences;
+    private Queue<Dialogue.Sentence> sentences;
 
-	// Use this for initialization
-	void Start () {
-		sentences = new Queue<string>();
-	}
+    // Use this for initialization
+    void Start()
+    {
+        sentences = new Queue<Dialogue.Sentence>();
+    }
 
-	public void StartDialogue (Dialogue dialogue)
-	{
-		Debug.Log("Inside Dialogue");
-		animator.SetBool("IsOpen", true);
 
-		nameText.text = dialogue.name;
 
-		sentences.Clear();
+    public void StartDialogue(Dialogue dialogue)
+    {
+        Debug.Log("Inside Dialogue");
+        animator.SetBool("IsOpen", true);
 
-		foreach (string sentence in dialogue.sentences)
-		{
-			sentences.Enqueue(sentence);
-		}
+        sentences.Clear();
 
-		DisplayNextSentence();
-	}
+        foreach (Dialogue.Sentence sentence in dialogue.sentences)
+        {
+            sentences.Enqueue(sentence);
+        }
 
-	public void DisplayNextSentence ()
-	{
-		if (sentences.Count == 0)
-		{
-			EndDialogue();
-			return;
-		}
+        DisplayNextSentence();
 
-		string sentence = sentences.Dequeue();
-		StopAllCoroutines();
-		StartCoroutine(TypeSentence(sentence));
-	}
+    }
 
-	IEnumerator TypeSentence (string sentence)
-	{
-		dialogueText.text = "";
-		foreach (char letter in sentence.ToCharArray())
-		{
-			dialogueText.text += letter;
-			yield return null;
-		}
-	}
 
-	void EndDialogue()
-	{
-		animator.SetBool("IsOpen", false);
-	}
+    public void DisplayNextSentence()
+    {
+        if (sentences.Count == 0)
+        {
+            EndDialogue();
+            return;
+        }
 
+        Dialogue.Sentence sentence = sentences.Dequeue();
+        StopAllCoroutines();
+        StartCoroutine(TypeSentence(sentence));
+    }
+
+    IEnumerator TypeSentence(Dialogue.Sentence sentence)
+    {
+        dialogueText.text = "";
+        foreach (char letter in sentence.text.ToCharArray())
+        {
+            dialogueText.text += letter;
+            yield return null;
+        }
+
+        nameText.text = "";
+        foreach (char letter in sentence.name.ToCharArray())
+        {
+            nameText.text += letter;
+            yield return null;
+        }
+    }
+
+    void EndDialogue()
+    {
+        animator.SetBool("IsOpen", false);
+    }
+
+    
 }

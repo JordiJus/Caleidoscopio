@@ -132,7 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 256103999}
-  - component: {fileID: 256103998}
+  - component: {fileID: 256104000}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: DialogueManager
@@ -140,21 +140,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &256103998
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 256103997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03660376eff59b847a7e3816e401d8f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nameText: {fileID: 300420676}
-  dialogueText: {fileID: 1189631161}
-  animator: {fileID: 2054625641}
 --- !u!4 &256103999
 Transform:
   m_ObjectHideFlags: 0
@@ -170,6 +155,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &256104000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256103997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 935ebc7d46b4c53499530c5e293746e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 300420676}
+  dialogueText: {fileID: 1189631161}
+  animator: {fileID: 2054625641}
 --- !u!1 &300420675
 GameObject:
   m_ObjectHideFlags: 0
@@ -1018,16 +1018,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1585992121}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abec64df0c324414db4d48404e6746de, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c40f14283b9f734b955707e1e410e81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    name: Hollis
-    sentences:
-    - hollaaaa
-    - ayuda no puedo mas
-    - El siguiente es el ultimo texto
-    - Pulsar continue cierra el dialogo
+  dialogue: {fileID: 11400000, guid: 467f2e6cf1bf03541bf6f8c8476996b9, type: 2}
 --- !u!114 &1585992124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1205,7 +1199,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 256103998}
+      - m_Target: {fileID: 256104000}
         m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
         m_MethodName: DisplayNextSentence
         m_Mode: 1
@@ -1294,7 +1288,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -151}
+  m_AnchoredPosition: {x: 0, y: -509}
   m_SizeDelta: {x: 676.397, y: 218.5115}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &2054625641
