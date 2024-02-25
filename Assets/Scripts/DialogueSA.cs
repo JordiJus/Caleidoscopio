@@ -17,4 +17,6 @@ public class Dialogue : ScriptableObject
 
     public List<Sentence> sentences = new List<Sentence>();
 
+    public Decision decision;
+
 }
