@@ -15,6 +15,6 @@ public class Decision : ScriptableObject
         public string decisionSentence;
         public Dialogue dialogue;
     }
-
+    public Dialogue dialogueComun;
     public List<Elections> decisions = new List<Elections>();
 }

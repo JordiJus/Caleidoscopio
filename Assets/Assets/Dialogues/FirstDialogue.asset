@@ -17,3 +17,4 @@ MonoBehaviour:
     text: Hola Lespere
   - name: Lespere
     text: Hola amor mio
+  decision: {fileID: 11400000, guid: 46d90302ff3d5ef4f866b68283bfe221, type: 2}

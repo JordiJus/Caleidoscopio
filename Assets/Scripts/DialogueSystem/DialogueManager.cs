@@ -17,6 +17,7 @@ public class DialogueManager : MonoBehaviour
 
     private Decision currentDecision;
     private bool hasDecision = false;
+    private Dialogue dialogueComun;
 
     public Button decisionButton1;
     public Button decisionButton2;
@@ -29,16 +30,10 @@ public class DialogueManager : MonoBehaviour
         sentences = new Queue<Dialogue.Sentence>();
     }
 
-    public void SaveDecision(Decision decision)
-    {
-        currentDecision = decision;
-        hasDecision = true;
-    }
-
     public void StartDialogue(Dialogue dialogue)
     {
         Debug.Log("Inside Dialogue");
-        // animator.SetBool("IsOpen", true);
+        animator.SetBool("IsOpen", true);
 
         sentences.Clear();
 
@@ -47,7 +42,12 @@ public class DialogueManager : MonoBehaviour
             sentences.Enqueue(sentence);
         }
 
-
+        if (dialogue.decision != null)
+        {
+            currentDecision = dialogue.decision;
+            hasDecision = true;
+        }
+        
         DisplayNextSentence();
 
     }
@@ -100,7 +100,6 @@ public class DialogueManager : MonoBehaviour
             Debug.LogWarning("Current decision or decision options are null or empty.");
             EndDialogue();
         }
-        // Show decisions in 4 buttons and wait for answer, then save the dialogue from that button onto this dialogue in the manager and change sentences count
     }
 
     IEnumerator TypeSentence(Dialogue.Sentence sentence)
@@ -123,6 +122,11 @@ public class DialogueManager : MonoBehaviour
     void OnDecisionButtonClicked(Dialogue nextDialogue)
     {
         // Start the next dialogue
+        dialogueComun = currentDecision.dialogueComun;
+        currentDecision = null;
+        hasDecision = false;
+
+
         StartDialogue(nextDialogue);
         // Hide all decision buttons
         HideDecisionButtons();
@@ -145,10 +149,16 @@ public class DialogueManager : MonoBehaviour
         {
             currentDecision = null; // Reset currentDecision after handling it
             return;
-        } else
+        } else if (dialogueComun != null) 
+        {
+            StartDialogue(dialogueComun);
+            dialogueComun = null;
+            return;
+        }
+        else
         {
             Debug.Log("Textooo");
-            // animator.SetBool("IsOpen", false);
+            animator.SetBool("IsOpen", false);
         }
         
     }

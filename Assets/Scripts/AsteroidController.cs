@@ -31,7 +31,7 @@ public class AsteroidController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //Debug.Log("Asteroid in");
-        if (collision.CompareTag("Hay"))
+        if (collision.CompareTag("Destroyer"))
         {
             Destroy(gameObject);
         }

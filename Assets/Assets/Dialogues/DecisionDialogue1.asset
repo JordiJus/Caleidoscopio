@@ -12,4 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91fb4accfb41ee84db7f29c2e2e9989d, type: 3}
   m_Name: DecisionDialogue1
   m_EditorClassIdentifier: 
-  sentences: []
+  sentences:
+  - name: Lespere
+    text: Que locuras dices amor?!
+  - name: Hollis
+    text: Lo que oyes *Hace el saludo fascista*
+  decision: {fileID: 0}

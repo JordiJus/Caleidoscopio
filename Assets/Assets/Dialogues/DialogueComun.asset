@@ -10,9 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 91fb4accfb41ee84db7f29c2e2e9989d, type: 3}
-  m_Name: DialogueD2
+  m_Name: DialogueComun
   m_EditorClassIdentifier: 
   sentences:
+  - name: Hollis
+    text: Bueno que vamos a comer?
   - name: Lespere
-    text: Si! vamos a casarnos amor
+    text: Tu polla gogogogo
   decision: {fileID: 0}

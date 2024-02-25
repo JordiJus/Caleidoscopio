@@ -12,4 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ef5764f7bd675c4a95b8c8ee696e916, type: 3}
   m_Name: Decision1
   m_EditorClassIdentifier: 
-  keySentence: 
+  keySentence: "\xBFLe digo a Lespere que nos casamos?"
+  dialogueComun: {fileID: 11400000, guid: aa81dfa70bd83144b855ce8d8029893e, type: 2}
+  decisions:
+  - decisionSentence: Vamos a casarnos
+    dialogue: {fileID: 11400000, guid: e5414cf3c26e2c549a9c3d31db8e7c2f, type: 2}
+  - decisionSentence: No quiero saber nada de ti
+    dialogue: {fileID: 11400000, guid: e8c46f2bdd8cc8646b2a46bb1e1c64b3, type: 2}
+  - decisionSentence: Estoy embarazado
+    dialogue: {fileID: 11400000, guid: e5414cf3c26e2c549a9c3d31db8e7c2f, type: 2}
+  - decisionSentence: He matado a toda tu familia
+    dialogue: {fileID: 11400000, guid: e8c46f2bdd8cc8646b2a46bb1e1c64b3, type: 2}

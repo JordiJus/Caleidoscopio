@@ -6,6 +6,7 @@ TagManager:
   tags:
   - DialogueManager
   - Asteroid
+  - Destroyer
   layers:
   - Default
   - TransparentFX
@@ -13,8 +14,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Background
+  - Player
   - 
   - 
   - 
@@ -42,4 +43,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Objects
+    uniqueID: 4081855073
+    locked: 0
+  - name: Player
+    uniqueID: 1659442579
     locked: 0
