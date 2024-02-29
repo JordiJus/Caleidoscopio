@@ -164,7 +164,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 256103997}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 935ebc7d46b4c53499530c5e293746e8, type: 3}
+  m_Script: {fileID: 11500000, guid: d8a42ab4d605db241a82831d5b7d6986, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: {fileID: 300420676}
@@ -1367,10 +1367,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1585992121}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c40f14283b9f734b955707e1e410e81, type: 3}
+  m_Script: {fileID: 11500000, guid: 87641e981b76926449611779ab71df4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: 467f2e6cf1bf03541bf6f8c8476996b9, type: 2}
+  dialogue: {fileID: 11400000, guid: aad31e0520c6a2f4dba288622cd433ca, type: 2}
 --- !u!114 &1585992124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2259,7 +2259,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: -183}
+  m_AnchoredPosition: {x: 0, y: 109.26}
   m_SizeDelta: {x: -403.60303, y: 218.5115}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &2054625641
@@ -2272,7 +2272,7 @@ Animator:
   m_GameObject: {fileID: 2054625639}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6b4110f245b392c43b57798b160c2e97, type: 2}
+  m_Controller: {fileID: 9100000, guid: b0282411d0748874fa733c1184799637, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2294,8 +2294,8 @@ Animation:
   serializedVersion: 3
   m_Animation: {fileID: 0}
   m_Animations:
-  - {fileID: 7400000, guid: 0bec8842cfb537a4ba16f6535e570612, type: 2}
-  - {fileID: 7400000, guid: f629d056ebc7c1a48bca4ac2b0584081, type: 2}
+  - {fileID: 7400000, guid: 6b9f2fa417fc3db4ab8af9583895a7ec, type: 2}
+  - {fileID: 7400000, guid: 7df144e4472a47d419394401f2ab07dd, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0

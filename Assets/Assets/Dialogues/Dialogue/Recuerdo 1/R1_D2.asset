@@ -10,11 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a3bd7e7f2d574a48b9bd188018a9e19, type: 3}
-  m_Name: R1_D1
+  m_Name: R1_D2
   m_EditorClassIdentifier: 
   sentences:
   - name: Hollis
-    text: Hola Lespere
-  - name: Lespere
-    text: Hola hollis
-  decision: {fileID: 11400000, guid: a23cb02583b100b49abcb17a420e853f, type: 2}
+    text: No te quejes
+  decision: {fileID: 0}
