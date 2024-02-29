@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 3170027746248751975}
   - component: {fileID: 4660189417732057674}
-  - component: {fileID: 2788317324584539750}
+  - component: {fileID: 4364289806978980875}
   - component: {fileID: 607080508218532086}
   - component: {fileID: -1334269647995614623}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AsterMed1
   m_TagString: Asteroid
   m_Icon: {fileID: 0}
@@ -73,9 +73,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 1659442579
+  m_SortingLayer: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300014, guid: 1bd6c74c058d5f143a391104c445e845, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -87,7 +87,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2788317324584539750
+--- !u!114 &4364289806978980875
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -96,11 +96,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 6747026704579016348}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7e3413f51c764a438498ef32d2da38c, type: 3}
+  m_Script: {fileID: 11500000, guid: 59cffe304f9906c4e9725d72b10eb606, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   MinMoveSpeed: 1
-  MaxMoveSpeed: 5
+  MaxMoveSpeed: 3
 --- !u!50 &607080508218532086
 Rigidbody2D:
   serializedVersion: 4

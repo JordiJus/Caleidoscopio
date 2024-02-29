@@ -10,8 +10,13 @@ public class DialogueManager : MonoBehaviour
     public TMP_Text nameText;
     public TMP_Text dialogueText;
     public Button continueButton;
+    public Sprite dialogueImageLeft;
+    public Sprite dialogueImageRight;
+    public GameObject dialogueBox;
 
     public Animator animator;
+
+    
 
     private Queue<Dialogue.Sentence> sentences;
 
@@ -34,6 +39,8 @@ public class DialogueManager : MonoBehaviour
     {
         Debug.Log("Inside Dialogue");
         animator.SetBool("IsOpen", true);
+
+        
 
         sentences.Clear();
 
@@ -66,6 +73,12 @@ public class DialogueManager : MonoBehaviour
         {
             Dialogue.Sentence sentence = sentences.Dequeue();
             StopAllCoroutines();
+            if(sentence.name == "Hollis"){
+                dialogueBox.GetComponent<Image>().sprite = dialogueImageLeft;
+            } else {
+                dialogueBox.GetComponent<Image>().sprite = dialogueImageRight;
+            }
+            
             StartCoroutine(TypeSentence(sentence));
         }
 
