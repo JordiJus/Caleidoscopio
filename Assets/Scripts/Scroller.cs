@@ -5,12 +5,12 @@ using UnityEngine.UI;
 
 public class Scroller : MonoBehaviour
 {
-    [SerializeField] private RawImage img;
-    [SerializeField] private float x, y;
+    private float length, startpos;
+    public GameObject cam;
+    public float parallaxEffect;
 
-    // Update is called once per frame
-    void Update()
-    {
-        img.uvRect = new Rect(img.uvRect.position + new Vector2(x, y) * Time.deltaTime, img.uvRect.size);
+    void Start () {
+        startpos = transform.position.x;
+        length = GetComponent<SpriteRenderer>().bounds.size.x;
     }
 }

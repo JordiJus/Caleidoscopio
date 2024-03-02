@@ -11,9 +11,11 @@ public class GamePlayerController : MonoBehaviour
     private float v; // 当前垂直输入
     private float lastDirection = 0; // 最后的移动方向
     [HideInInspector] public float currentVerticalSpeed = 0.5f;
+    public Animator animator;
 
     void Start()
     {
+        animator.SetBool("GoingUp", true);
         rb2D = GetComponent<Rigidbody2D>();
     }
 
@@ -38,6 +40,12 @@ public class GamePlayerController : MonoBehaviour
 
         // 使用最后的方向来更新速度
         v = lastDirection;
+
+        if (lastDirection > 0.0f) {
+            animator.SetBool("GoingUp", true);
+        } else {
+            animator.SetBool("GoingUp", false);
+        }
     }
 
     void FixedUpdate()
