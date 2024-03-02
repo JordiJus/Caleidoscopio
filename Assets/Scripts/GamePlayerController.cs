@@ -13,6 +13,7 @@ public class GamePlayerController : MonoBehaviour
     [HideInInspector] public float currentVerticalSpeed = 0.5f;
     public Animator animator;
 
+
     void Start()
     {
         animator.SetBool("GoingUp", true);
@@ -46,6 +47,8 @@ public class GamePlayerController : MonoBehaviour
         } else {
             animator.SetBool("GoingUp", false);
         }
+
+        transform.Rotate (Vector3.forward * 0.1f);
     }
 
     void FixedUpdate()

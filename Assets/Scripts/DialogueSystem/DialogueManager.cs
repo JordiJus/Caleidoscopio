@@ -90,7 +90,7 @@ public class DialogueManager : MonoBehaviour
         if (currentDecision != null && currentDecision.decisions.Count > 0)
         {
             List<Button> decisionButtons = new List<Button> { decisionButton1, decisionButton2, decisionButton3, decisionButton4 };
-            nameText.text = currentDecision.keySentence;
+            dialogueText.text = currentDecision.keySentence;
             for (int i = 0; i < currentDecision.decisions.Count; i++)
             {
                 if (i >= decisionButtons.Count) // Ensure we don't create more buttons than available

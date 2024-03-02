@@ -5,12 +5,12 @@ using UnityEngine.UI;
 
 public class Scroller : MonoBehaviour
 {
-    private float length, startpos;
-    public GameObject cam;
-    public float parallaxEffect;
+    public float speed;
 
-    void Start () {
-        startpos = transform.position.x;
-        length = GetComponent<SpriteRenderer>().bounds.size.x;
+    [SerializeField]
+    private Renderer bgRenderer;
+
+    void Update(){
+        bgRenderer.material.mainTextureOffset+= new Vector2(speed * Time.deltaTime, 0);
     }
 }
