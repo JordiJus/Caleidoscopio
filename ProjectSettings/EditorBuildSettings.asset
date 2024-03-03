@@ -9,9 +9,18 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: acb60aec88821a4428277fdf50ba23f1
+  - enabled: 1
     path: Assets/Scenes/GamePlay.unity
     guid: 1fd67e38df7931d45a3d39911ba020ea
   - enabled: 1
     path: Assets/Scenes/Dialogue.unity
     guid: 24b1f7ada7c968f40810baf689e9cece
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 641bebdbb7aac6849a2c4c36efc5bb92
+  - enabled: 1
+    path: Assets/Scenes/Ending.unity
+    guid: 5776a8cf129074f48b07c74aa50d0f9a
   m_configObjects: {}

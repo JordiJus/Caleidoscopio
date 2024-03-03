@@ -4,18 +4,20 @@ using UnityEngine;
 
 public class GamePlayerController : MonoBehaviour
 {
+    public PlayerStats playerStats;
     [Range(-10, 10f)] public float moveSpeed = 5f;
-    public float maxSpeed = 10f; // 最大速度
-    public float acceleration = 0.1f; // 加速度
+    public float maxSpeed = 10f; 
+    public float acceleration = 0.1f; 
     Rigidbody2D rb2D;
-    private float v; // 当前垂直输入
-    private float lastDirection = 0; // 最后的移动方向
+    private float v; 
+    private float lastDirection = 0; 
     [HideInInspector] public float currentVerticalSpeed = 0.5f;
     public Animator animator;
 
 
     void Start()
     {
+        playerStats = FindObjectOfType<PlayerStats>();
         animator.SetBool("GoingUp", true);
         rb2D = GetComponent<Rigidbody2D>();
     }
@@ -24,22 +26,14 @@ public class GamePlayerController : MonoBehaviour
     {
         float input = Input.GetAxis("Vertical");
 
-        // 检测玩家是否有输入
         if (Mathf.Abs(input) > 0.01f)
         {
-            lastDirection = Mathf.Sign(input); // 更新最后的方向
-                                               // 逐渐增加速度，但不超过最大速度
+            lastDirection = Mathf.Sign(input); 
 
             moveSpeed = Mathf.Min(moveSpeed + lastDirection*acceleration * Time.deltaTime, maxSpeed);
             //Debug.Log()
         }
-        else
-        {
-            // 如果没有新的输入，保持当前速度和方向
-            //moveSpeed = Mathf.Max(moveSpeed, 5f); // 可以调整为逐渐减速
-        }
 
-        // 使用最后的方向来更新速度
         v = lastDirection;
 
         if (lastDirection > 0.0f) {
@@ -57,6 +51,17 @@ public class GamePlayerController : MonoBehaviour
         {
             // 使用最后的方向和当前速度来设置Rigidbody的速度
             rb2D.velocity = new Vector2(0, moveSpeed);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        //Debug.Log("Asteroid in");
+        if (collision.CompareTag("Asteroid"))
+        {
+            playerStats.health--;
+            Debug.Log(playerStats.health);
+            Destroy(collision.gameObject);
         }
     }
 

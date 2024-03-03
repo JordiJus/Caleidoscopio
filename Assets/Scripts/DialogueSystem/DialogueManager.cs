@@ -209,9 +209,14 @@ public class DialogueManager : MonoBehaviour
         else
         {
             sceneLoader.counter++;
-            Debug.Log("Textooo");
+            
             animator.SetBool("IsOpen", false);
-            SceneManager.LoadScene(0);
+            if(sceneLoader.counter >= sceneLoader.maxCounter) {
+                SceneManager.LoadScene(3); //Change to 4
+            } else {
+                SceneManager.LoadScene(1);
+            }
+            
         }
         
     }

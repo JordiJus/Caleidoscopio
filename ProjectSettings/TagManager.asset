@@ -8,6 +8,9 @@ TagManager:
   - Asteroid
   - Destroyer
   - SceneLoader
+  - Wall
+  - WallDown
+  - PlayerStats
   layers:
   - Default
   - TransparentFX

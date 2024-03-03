@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d3534d713f7da848abefe1057278dca, type: 3}
-  m_Name: R2_E1
+  m_Script: {fileID: 11500000, guid: ddf4ec7c63cb1dc43ba60119e8fd65a1, type: 3}
+  m_Name: PlayerStats
   m_EditorClassIdentifier: 
-  keySentence: "\xBFQue hacer?"
-  dialogueComun: {fileID: 0}
-  decisions:
-  - decisionSentence: '*La nalguea*'
-    dialogue: {fileID: 11400000, guid: 5d8f162b0036c7f49acf7f33d77bb54f, type: 2}
+  health: 10
+  maxHealth: 10
+  position: {fileID: 0}
+  maldad: 0
+  agresividad: 0
