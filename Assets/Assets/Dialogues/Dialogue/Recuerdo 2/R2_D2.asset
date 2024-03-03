@@ -10,9 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a3bd7e7f2d574a48b9bd188018a9e19, type: 3}
-  m_Name: R1_E1C1
+  m_Name: R2_D2
   m_EditorClassIdentifier: 
-  sentences:
-  - name: Lespere
-    text: Ala le pegaste
+  sentences: []
   decision: {fileID: 0}

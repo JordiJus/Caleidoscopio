@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,6 +14,11 @@ public class Dialogue : ScriptableObject
         public string name;
         [TextArea(3, 10)]
         public string text;
+
+        public Sentence(String n, String t){
+            this.name = n;
+            this.text = t;
+        }
     }
 
     public List<Sentence> sentences = new List<Sentence>();

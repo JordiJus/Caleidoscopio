@@ -10,9 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a3bd7e7f2d574a48b9bd188018a9e19, type: 3}
-  m_Name: R1_E1C1
+  m_Name: R2_D1
   m_EditorClassIdentifier: 
   sentences:
-  - name: Lespere
-    text: Ala le pegaste
-  decision: {fileID: 0}
+  - name: Hollis
+    text: Hola Applegate
+  - name: Applegate
+    text: Guarra Asquerosa
+  decision: {fileID: 11400000, guid: d52d974b04321ca49b00090edd5dce46, type: 2}

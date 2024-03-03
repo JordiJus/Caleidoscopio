@@ -17,4 +17,6 @@ MonoBehaviour:
     text: Hola Lespere
   - name: Lespere
     text: Hola hollis
+  - name: Director
+    text: Nada de homosexualidades
   decision: {fileID: 11400000, guid: a23cb02583b100b49abcb17a420e853f, type: 2}

@@ -9,10 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3bd7e7f2d574a48b9bd188018a9e19, type: 3}
-  m_Name: R1_E1C1
+  m_Script: {fileID: 11500000, guid: 7d3534d713f7da848abefe1057278dca, type: 3}
+  m_Name: R2_E1
   m_EditorClassIdentifier: 
-  sentences:
-  - name: Lespere
-    text: Ala le pegaste
-  decision: {fileID: 0}
+  keySentence: "\xBFQue hacer?"
+  dialogueComun: {fileID: 11400000, guid: 5d8f162b0036c7f49acf7f33d77bb54f, type: 2}
+  decisions:
+  - decisionSentence: '*La nalguea*'
+    dialogue: {fileID: 0}
