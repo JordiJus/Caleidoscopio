@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d3534d713f7da848abefe1057278dca, type: 3}
+  m_Name: R2_E2
+  m_EditorClassIdentifier: 
+  keySentence: "\xBFQu\xE9 le digo a Applegate?"
+  dialogueComun: {fileID: 11400000, guid: a7691c616605ede4183a6985da9806d1, type: 2}
+  decisions:
+  - decisionSentence: Lo invito a unir fuerzas y le propongo ser mi segundo al mando.
+    dialogue: {fileID: 11400000, guid: 4263873f15968f8468e8769ffb0c3fe8, type: 2}
+  - decisionSentence: Lo menosprecio y le digo que no se merece su puesto.
+    dialogue: {fileID: 11400000, guid: 7d7c7d75ad0247243bf069bd2b6b4204, type: 2}
+  - decisionSentence: Amenazar agresivamente por lo mal que me ha tratado siempre
+    dialogue: {fileID: 11400000, guid: 36e10386146000245b8cf2cb632e4264, type: 2}
+  - decisionSentence: Lo empujo y le digo que se largue de mi vista.
+    dialogue: {fileID: 11400000, guid: 45758072566469248ab011204de4f251, type: 2}

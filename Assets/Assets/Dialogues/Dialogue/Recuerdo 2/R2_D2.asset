@@ -12,5 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a3bd7e7f2d574a48b9bd188018a9e19, type: 3}
   m_Name: R2_D2
   m_EditorClassIdentifier: 
-  sentences: []
-  decision: {fileID: 0}
+  sentences:
+  - name: Director
+    text: "Damos por finalizado el proceso de votaci\xF3n. El ganador es el se\xF1or
+      Hollis, con seis votos a favor y uno en contra. Felicidades, se\xF1or Hollis."
+  - name: Director
+    text: "Usted ser\xE1 el capit\xE1n de la pr\xF3xima expedici\xF3n espacial. Se\xF1ores,
+      les agradecemos a todos su colaboraci\xF3n y les deseamos lo mejor en sus futuros
+      proyectos."
+  - name: 
+    text: "La votaci\xF3n termina. He ganado por un voto. \xC9l se alegra por fuera,
+      pero por dentro se nota desde lejos que siente rencor y envidia. "
+  - name: 
+    text: Applegate se me acerca para hablar pero su actitud no parece amigable.
+  decision: {fileID: 11400000, guid: e47f83f7877326841aec09f8fde77827, type: 2}
+  backgroundSprite: {fileID: 21300000, guid: e114ac62252cad946a8a72a2123eb68e, type: 3}

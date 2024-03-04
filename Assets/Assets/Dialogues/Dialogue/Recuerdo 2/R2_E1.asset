@@ -12,8 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d3534d713f7da848abefe1057278dca, type: 3}
   m_Name: R2_E1
   m_EditorClassIdentifier: 
-  keySentence: "\xBFQue hacer?"
-  dialogueComun: {fileID: 0}
+  keySentence: "\xBFDeber\xEDa decirle algo m\xE1s al Director antes de pasar al
+    proceso de votaci\xF3n?"
+  dialogueComun: {fileID: 11400000, guid: 1c691a490d316e74497317364085c09a, type: 2}
   decisions:
-  - decisionSentence: '*La nalguea*'
-    dialogue: {fileID: 11400000, guid: 5d8f162b0036c7f49acf7f33d77bb54f, type: 2}
+  - decisionSentence: "No deber\xEDa decir nada, todo lo necesario ha sido comunicado
+      a la tripulaci\xF3n."
+    dialogue: {fileID: 0}
+  - decisionSentence: "Pedir al director que me deje hablar con Applegate en privado
+      antes de votar para hacerle entender por qu\xE9 debe renunciar a su candidatura"
+    dialogue: {fileID: 11400000, guid: e93c854c9ff7546478bd94f1412feb68, type: 2}
+  - decisionSentence: "Le lanzo una mirada agresiva pero contengo mi ira hacia \xE9l
+      para no montar un esc\xE1ndalo y no rebajarme a su nivel."
+    dialogue: {fileID: 11400000, guid: b2aac36b5a2b5a74990cebd84afc6bea, type: 2}
+  - decisionSentence: "Intento pegar a Applegate desahogando mi rabia al haber sido
+      tan falso en su presentaci\xF3n, ese in\xFAtil no merece el puesto."
+    dialogue: {fileID: 11400000, guid: d94ec14c90234d84fbdf4deee81eb331, type: 2}

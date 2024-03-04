@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a3bd7e7f2d574a48b9bd188018a9e19, type: 3}
+  m_Name: R2_D0
+  m_EditorClassIdentifier: 
+  sentences:
+  - name: Applegate
+    text: "\xBFQu\xE9 quer\xEDa decirte Hollis? "
+  - name: Applegate
+    text: "Ah, s\xED ya recuerdo. "
+  - name: Applegate
+    text: "Te odio profundamente. Pero t\xFA ya lo sabes. Hace mucho tiempo que lo
+      sabes."
+  - name: Applegate
+    text: "Quiero confesarte algo, Algo que te har\xE1 muy feliz. Fui uno de los
+      que votaron contra ti en la Rocket Company."
+  decision: {fileID: 11400000, guid: d52d974b04321ca49b00090edd5dce46, type: 2}
+  backgroundSprite: {fileID: 21300000, guid: 4899f55b0f3af8a4d80416c8329a864f, type: 3}

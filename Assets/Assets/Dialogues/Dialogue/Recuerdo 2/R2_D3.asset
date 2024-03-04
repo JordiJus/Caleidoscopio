@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a3bd7e7f2d574a48b9bd188018a9e19, type: 3}
+  m_Name: R2_D3
+  m_EditorClassIdentifier: 
+  sentences:
+  - name: Applegate
+    text: "Te ment\xED Hollis. Hace un momento. Te ment\xED. No vot\xE9 contra ti,
+      solo deseaba hacerte da\xF1o. Parec\xEDas el m\xE1s indicado."
+  - name: Applegate
+    text: "Siempre nos hemos peleado, Hollis. No me creo que est\xE9 arrepinti\xE9ndome."
+  - name: Applegate
+    text: "Es igual, quiero que sepas que yo tambi\xE9n he sido un idiota. No hay
+      ni pizca de verdad en todo lo que dije, pero ojal\xE1 te vayas al infierno,
+      me encontrar\xE1s por all\xED entre cenizas."
+  - name: 
+    text: "Applegate suelta un \xFAltimo suspiro, antes de callar para siempre."
+  decision: {fileID: 0}
+  backgroundSprite: {fileID: 21300000, guid: 4899f55b0f3af8a4d80416c8329a864f, type: 3}

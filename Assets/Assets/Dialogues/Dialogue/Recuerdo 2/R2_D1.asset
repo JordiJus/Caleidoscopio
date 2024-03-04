@@ -13,8 +13,40 @@ MonoBehaviour:
   m_Name: R2_D1
   m_EditorClassIdentifier: 
   sentences:
-  - name: Hollis
-    text: Hola Applegate
+  - name: 
+    text: "Estoy en la sala de reuniones de la Rocket Company, donde se va a decidir
+      qui\xE9n ser\xE1 el pr\xF3ximo l\xEDder de una misi\xF3n a las estrellas."
+  - name: 
+    text: "Frente a m\xED hay una pantalla que muestra los rostros de los otros candidatos,
+      entre ellos Applegate, un viejo rival m\xEDo."
   - name: Applegate
-    text: Guarra Asquerosa
-  decision: {fileID: 11400000, guid: d52d974b04321ca49b00090edd5dce46, type: 2}
+    text: "Se\xF1ores, yo creo que soy el m\xE1s indicado para ser el capit\xE1n
+      de esta misi\xF3n, porque tengo la experiencia, la habilidad y el valor que
+      se requieren. "
+  - name: Applegate
+    text: "Si me eligen a m\xED, les prometo que los llevar\xE9 a las estrellas y
+      los traer\xE9 de vuelta sanos y salvos."
+  - name: 
+    text: "Siento una mezcla de rabia y admiraci\xF3n. \xC9l es un buen piloto, pero
+      tambi\xE9n un mal compa\xF1ero. No le importa nadie m\xE1s que \xE9l mismo."
+  - name: 
+    text: "No s\xE9 si los dem\xE1s lo ven as\xED, o si se dejan impresionar por
+      sus palabras."
+  - name: Director
+    text: "Muy bien, se\xF1or Applegate. Gracias por su intervenci\xF3n. Pasamos
+      al se\xF1or Hollis. Adelante, se\xF1or Hollis."
+  - name: Hollis
+    text: "Se\xF1ores, yo creo que tambi\xE9n puedo ser un buen capit\xE1n para esta
+      misi\xF3n, porque tengo la pasi\xF3n, la visi\xF3n y la responsabilidad que
+      se necesitan."
+  - name: Hollis
+    text: "No he volado tanto como Applegate, pero he estudiado mucho sobre el espacio,
+      he aprendido mucho de mis compa\xF1eros."
+  - name: Hollis
+    text: "Si me eligen a m\xED, les prometo que los tratar\xE9 como iguales y que
+      los respetar\xE9 como amigos."
+  - name: Director
+    text: "Muy bien, se\xF1or Hollis. Gracias por su intervenci\xF3n. Pasamos a la
+      votaci\xF3n. podr\xE1n emitir su voto de forma secreta y an\xF3nima."
+  decision: {fileID: 11400000, guid: 4a4eaae2bffebd74b9a975cd21eff1a4, type: 2}
+  backgroundSprite: {fileID: 21300000, guid: e114ac62252cad946a8a72a2123eb68e, type: 3}
