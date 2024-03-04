@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a3bd7e7f2d574a48b9bd188018a9e19, type: 3}
+  m_Name: R1_D4
+  m_EditorClassIdentifier: 
+  sentences:
+  - name: Lespere
+    text: "Piensa en lo que te dij\xE9. La paz interior puede ser la clave para enfrentar
+      nuestro destino con dignidad"
+  - name: Hollis
+    text: "Pero ahora est\xE1s aqu\xED, Lespere. Todo ha terminado, como si nunca
+      hubiera sucedido, \xBFno es cierto?"
+  - name: Lespere
+    text: No.
+  - name: Hollis
+    text: Lo que llega a su fin ya no sirve para nada. Todo lo que hemos hecho no
+      sirve de nada.
+  - name: Lespere
+    text: "S\xED sirve Holis, ahora puedo estar tranquilo."
+  - name: 
+    text: "Seguidamente Lespere empez\xF3 a acelerar, r\xE1pidamente convirti\xE9ndose
+      en una estrella y uni\xE9ndose a la naturaleza\u2026"
+  decision: {fileID: 0}
+  backgroundSprite: {fileID: 21300000, guid: 4899f55b0f3af8a4d80416c8329a864f, type: 3}

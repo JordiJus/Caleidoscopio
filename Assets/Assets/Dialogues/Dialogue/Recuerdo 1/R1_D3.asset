@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a3bd7e7f2d574a48b9bd188018a9e19, type: 3}
+  m_Name: R1_D3
+  m_EditorClassIdentifier: 
+  sentences:
+  - name: Lespere
+    text: "Entiendo tu frustraci\xF3n Holis, a veces la vida se complica y nuestro
+      alrededor es un reflejo de ello."
+  - name: Lespere
+    text: "S\xE9 que son momentos dif\xEDciles pero siempre hay que conservar la
+      cabeza, si no tienes paz contigo mismo, no la tendr\xE1s con nadie."
+  - name: Hollis
+    text: "Pero es que adem\xE1s, dice que no pudimos recoger los suministros en
+      la anterior misi\xF3n porque me entretuve y no respond\xED la se\xF1al de despegue."
+  - name: Hollis
+    text: "\xA1No es cierto, los controles fallaron! Applegate era el encargado de
+      la supervisi\xF3n previa de los motores, seguro que les hizo algo."
+  - name: Lespere
+    text: "\xBFEso no ser\xEDan las mismas suposiciones que no te gustan nada?"
+  - name: Hollis
+    text: "Tal vez, pero\u2026"
+  - name: Lespere
+    text: Hay algo que quiero que entiendas, Hollis. No tienes enemigos, nadie tiene
+      enemigos, ni siquiera Apellgate.
+  - name: Lespere
+    text: "No puedes dejar que ganen tus sentimientos negativos, no porque Applegate
+      no se merezca tu odio, si no porque t\xFA no lo mereces."
+  decision: {fileID: 11400000, guid: f00d5c1b1f60e2a41821c90f25c6f944, type: 2}
+  backgroundSprite: {fileID: 21300000, guid: 74d96b1df93f3314a92109270b60d948, type: 3}

@@ -19,5 +19,27 @@ MonoBehaviour:
       votaciones."
   - name: Lespere
     text: "\xBFQu\xE9 ha sido esta vez?"
-  decision: {fileID: 0}
+  - name: Hollis
+    text: "La verdad, no me importa que vote en mi contra, est\xE1 en su derecho,
+      pero Stone esta ma\xF1ana me ha preguntado porqu\xE9 he dejado fuera a Applegate
+      para ir a Torren IV."
+  - name: Hollis
+    text: "Dice que ya no conf\xEDa en m\xED porque no cuento con todo el equipo.
+      Pero a Applegate le van a destinar a otra misi\xF3n, yo no tuve nada que ver
+      con eso, creo que ya ha conseguido poner a todos en mi contra\u2026"
+  - name: Lespere
+    text: "No s\xE9 si \xE9l habr\xE1 tenido algo que ver en ese rumor, pero yo te
+      creo Holis, tal vez solo debes hablar con Stone para que lo entienda."
+  - name: Hollis
+    text: "Puede\u2026 pero tal vez ya he perdido la oportunidad, le dije a Stone
+      que no s\xE9 qui\xE9n se cree que es, pero no se puede dirigir a m\xED en ese
+      tono y hablar de suposiciones como si fueran ciertas, que tal vez me deber\xEDa
+      plantear su estancia en el equipo."
+  - name: Lespere
+    text: "Son palabras duras Holis, te entiendo pero tal vez se te est\xE1 subiendo
+      a la cabeza, a nadie le gusta que se inventen cosas pero tampoco nadie quiere
+      ser menospreciado de esa forma."
+  - name: Hollis
+    text: "Es que odio que inventen cosas sobre m\xED."
+  decision: {fileID: 11400000, guid: a23cb02583b100b49abcb17a420e853f, type: 2}
   backgroundSprite: {fileID: 21300000, guid: 74d96b1df93f3314a92109270b60d948, type: 3}

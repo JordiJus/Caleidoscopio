@@ -57,6 +57,7 @@ public class DialogueManager : MonoBehaviour
     {
         Debug.Log("Inside Dialogue");
         animator.SetBool("IsOpen", true);
+        Debug.Log("Nuevo diálogo");
 
         
         background.GetComponent<Image>().sprite = dialogue.backgroundSprite;
@@ -70,12 +71,13 @@ public class DialogueManager : MonoBehaviour
 
         if (dialogue.decision != null)
         {
+            Debug.Log("Diálogo normal con decisión");
             currentDecision = dialogue.decision;
             hasDecision = true;
         } else {
+            Debug.Log("Dialogo sin decisión");
             hasDecision = false;
         }
-        Debug.Log("4");
         DisplayNextSentence();
 
     }
@@ -101,6 +103,7 @@ public class DialogueManager : MonoBehaviour
     public void DisplayNextSentence()
     {
         
+        Debug.Log("Display Sentence");
         if (sentences.Count == 0 && hasDecision == false)
         {
             EndDialogue();
@@ -118,7 +121,6 @@ public class DialogueManager : MonoBehaviour
                 dialogueBox.GetComponent<Image>().sprite = dialogueImageRight;
             }
             ShowSprite(sentence.name);
-            Debug.Log("5");
             StartCoroutine(TypeSentence(sentence));
         }
 
@@ -175,12 +177,19 @@ public class DialogueManager : MonoBehaviour
     void OnDecisionButtonClicked(Dialogue nextDialogue)
     {
         // Start the next dialogue
-        dialogueComun = currentDecision.dialogueComun;
+        Dialogue dialogueNextCommon = currentDecision.dialogueComun;
         currentDecision = null;
         hasDecision = false;
 
+        if (nextDialogue == null) {
+            StartDialogue(dialogueNextCommon);
+        } else {
+            dialogueComun = dialogueNextCommon;
+            StartDialogue(nextDialogue);
+        }
+        
 
-        StartDialogue(nextDialogue);
+        
         // Hide all decision buttons
         HideDecisionButtons();
     }
@@ -202,16 +211,19 @@ public class DialogueManager : MonoBehaviour
         
         if (currentDecision != null)
         {
+            Debug.Log("Resetting decision");
             currentDecision = null; // Reset currentDecision after handling it
             return;
         } else if (dialogueComun != null) 
         {
+            Debug.Log("Dialogo común empezando");
             StartDialogue(dialogueComun);
             dialogueComun = null;
             return;
         }
         else
         {
+            Debug.Log("Ending");
             sceneLoader.counter++;
             
             animator.SetBool("IsOpen", false);

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d3534d713f7da848abefe1057278dca, type: 3}
+  m_Name: R1_E2
+  m_EditorClassIdentifier: 
+  keySentence: "\xBFQue deber\xEDa decirle?"
+  dialogueComun: {fileID: 11400000, guid: f801c4f3db79a89458c63b98df1b8b85, type: 2}
+  decisions:
+  - decisionSentence: "Tienes raz\xF3n, Lespere. No deber\xEDa llevar odio en mi
+      coraz\xF3n."
+    dialogue: {fileID: 11400000, guid: 8b266538b5fb95a40aa053745e87cbd1, type: 2}
+  - decisionSentence: "\xA1Bah! No puedo quedarme de brazos cruzados viendo como
+      alguien intenta derrumbarme. Eso no me sirve de nada."
+    dialogue: {fileID: 11400000, guid: f8e874ca467231348af2218604e059eb, type: 2}
+  - decisionSentence: "\xBFOdio, amor? No somos ni\xF1os Lespere, solo intento sobrevivir
+      como puedo."
+    dialogue: {fileID: 11400000, guid: 296d84d1670412c4eb3b49d538f6d0bb, type: 2}
+  - decisionSentence: "No me vengas con tonter\xEDas. Eres tan ingenuo como siempre."
+    dialogue: {fileID: 11400000, guid: 6705cac9c1cfd88468b5af2914f456f4, type: 2}

@@ -12,14 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d3534d713f7da848abefe1057278dca, type: 3}
   m_Name: R1_E1
   m_EditorClassIdentifier: 
-  keySentence: Que deberia hacer
-  dialogueComun: {fileID: 11400000, guid: 3b50e304d5744284aa461993be8e63e8, type: 2}
+  keySentence: "\xBFQue deber\xEDa decirle?"
+  dialogueComun: {fileID: 11400000, guid: af11c180bd1dd0b4889d8c6f93278d65, type: 2}
   decisions:
-  - decisionSentence: "Le pego un pu\xF1o"
-    dialogue: {fileID: 11400000, guid: f00d5c1b1f60e2a41821c90f25c6f944, type: 2}
-  - decisionSentence: b
+  - decisionSentence: "Pero tal vez tengas raz\xF3n, a veces tengo reacciones muy
+      fuertes."
     dialogue: {fileID: 0}
-  - decisionSentence: ola
+  - decisionSentence: No pienso aguantar que un subordinado me hable de esa forma
     dialogue: {fileID: 0}
-  - decisionSentence: djskakd
+  - decisionSentence: "Y no tiene ning\xFAn derecho, si se queda fuera del equipo
+      es porque lo merece."
+    dialogue: {fileID: 0}
+  - decisionSentence: "Soy el capit\xE1n, yo mando y nadie me habla en ese tono,
+      se quedar\xE1 fuera."
     dialogue: {fileID: 0}
