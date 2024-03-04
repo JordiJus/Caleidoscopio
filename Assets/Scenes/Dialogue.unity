@@ -263,6 +263,7 @@ MonoBehaviour:
   DirectorSprite: {fileID: 21300000, guid: 9118ac8e4bb73ae4ba971674fa94b3ae, type: 3}
   LeftSprite: {fileID: 2057334513}
   RightSprite: {fileID: 377862652}
+  background: {fileID: 1544029336}
 --- !u!114 &256104001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -340,13 +341,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -404,10 +405,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 60569525}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.048, y: 0.59735817}
-  m_AnchorMax: {x: 0.296, y: 0.73300004}
-  m_AnchoredPosition: {x: -0.5999756, y: 0.480999}
-  m_SizeDelta: {x: -3.1430054, y: 1.0384979}
+  m_AnchorMin: {x: 0.048, y: 0.6256419}
+  m_AnchorMax: {x: 0.296, y: 0.7782838}
+  m_AnchoredPosition: {x: -0.57159424, y: -0.89910126}
+  m_SizeDelta: {x: -3.143, y: 3.4366}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &377862652
 GameObject:

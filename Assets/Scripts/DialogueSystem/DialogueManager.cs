@@ -37,6 +37,7 @@ public class DialogueManager : MonoBehaviour
     public Sprite DirectorSprite;
     public GameObject LeftSprite;
     public GameObject RightSprite;
+    public GameObject background;
     
 
     // Use this for initialization
@@ -58,6 +59,7 @@ public class DialogueManager : MonoBehaviour
         animator.SetBool("IsOpen", true);
 
         
+        background.GetComponent<Image>().sprite = dialogue.backgroundSprite;
 
         sentences.Clear();
 
@@ -70,6 +72,8 @@ public class DialogueManager : MonoBehaviour
         {
             currentDecision = dialogue.decision;
             hasDecision = true;
+        } else {
+            hasDecision = false;
         }
         Debug.Log("4");
         DisplayNextSentence();
@@ -96,6 +100,7 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
+        
         if (sentences.Count == 0 && hasDecision == false)
         {
             EndDialogue();
@@ -146,8 +151,7 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("Current decision or decision options are null or empty.");
-            EndDialogue();
+            StartDialogue(currentDecision.dialogueComun);
         }
     }
 

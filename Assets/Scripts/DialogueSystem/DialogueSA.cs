@@ -25,4 +25,6 @@ public class Dialogue : ScriptableObject
 
     public Decision decision;
 
+    public Sprite backgroundSprite;
+
 }

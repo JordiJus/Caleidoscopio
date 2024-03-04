@@ -14,5 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentences:
   - name: Hollis
-    text: No te quejes
+    text: "Lespere, creo que he llegado a mi l\xEDmite, lo que era un juego de ni\xF1os
+      con Applegate ya ha llegado demasiado lejos, y no tiene nada que ver con las
+      votaciones."
+  - name: Lespere
+    text: "\xBFQu\xE9 ha sido esta vez?"
   decision: {fileID: 0}
+  backgroundSprite: {fileID: 21300000, guid: 74d96b1df93f3314a92109270b60d948, type: 3}
