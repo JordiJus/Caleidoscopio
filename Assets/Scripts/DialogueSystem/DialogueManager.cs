@@ -212,7 +212,7 @@ public class DialogueManager : MonoBehaviour
             
             animator.SetBool("IsOpen", false);
             if(sceneLoader.counter >= sceneLoader.maxCounter) {
-                SceneManager.LoadScene(3); //Change to 4
+                SceneManager.LoadScene(4);
             } else {
                 SceneManager.LoadScene(1);
             }
