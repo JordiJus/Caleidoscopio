@@ -13,6 +13,7 @@ public class DialogueTrigger : MonoBehaviour {
 	public void Start ()
 	{
 		sceneLoader = FindObjectOfType<SceneObjectLoader>();
+		Debug.Log(sceneLoader.counter);
 		background.GetComponent<Image>().sprite = sceneLoader.memories[sceneLoader.counter].background;
 		Debug.Log("INSIDE TRIGGER");
 		FindObjectOfType<DialogueManager>().StartDialogue(sceneLoader.memories[sceneLoader.counter].dialogue);

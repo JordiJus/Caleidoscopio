@@ -160,7 +160,8 @@ MonoBehaviour:
   - {fileID: 681364322}
   - {fileID: 1808992314}
   - {fileID: 826744835}
-  timeBetweenSpawns: 3
+  timeBetweenSpawns: 4
+  playerStats: {fileID: 0}
 --- !u!4 &75208362
 Transform:
   m_ObjectHideFlags: 0

@@ -9,11 +9,17 @@ public class AsteroidController : MonoBehaviour
     float moveSpeed;
     Rigidbody2D rb2D;
     private AsteroidSpawner Spawner;
+    public PlayerStats playerStats;
     // Start is called before the first frame update
     void Start()
     {
+        
+        playerStats = FindObjectOfType<PlayerStats>();
         rb2D = GetComponent<Rigidbody2D>();
+        MinMoveSpeed = 1 * Mathf.Ceil((playerStats.agresividad+1)/2.0f);
+        MaxMoveSpeed = 3 * Mathf.Ceil((playerStats.agresividad+1)/2.0f);
         moveSpeed = UnityEngine.Random.Range(MinMoveSpeed, MaxMoveSpeed);
+        
     }
 
     // Update is called once per frame

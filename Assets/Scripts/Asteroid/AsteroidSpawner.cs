@@ -9,9 +9,12 @@ public class AsteroidSpawner : MonoBehaviour
     public List<Transform> AsteroidSpawnPositions = new List<Transform>(); // 3
     public float timeBetweenSpawns;
     private List<GameObject> AsteroidList = new List<GameObject>(); // 5
+    public PlayerStats playerStats;
     // Start is called before the first frame update
     void Start()
     {
+        playerStats = FindObjectOfType<PlayerStats>();
+        timeBetweenSpawns = 3 - Mathf.Ceil(playerStats.maldad/2f);
         StartCoroutine(SpawnRoutine());
     }
 

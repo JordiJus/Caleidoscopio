@@ -5,6 +5,7 @@ using UnityEngine;
 [System.Serializable]
 [CreateAssetMenu]
 public class PlayerStats : ScriptableObject{
+    
     public int health;
     public int maxHealth;
     public Transform position;

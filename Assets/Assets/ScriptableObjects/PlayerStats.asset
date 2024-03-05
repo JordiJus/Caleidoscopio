@@ -15,5 +15,5 @@ MonoBehaviour:
   health: 10
   maxHealth: 10
   position: {fileID: 0}
-  maldad: 0
+  maldad: 1
   agresividad: 0

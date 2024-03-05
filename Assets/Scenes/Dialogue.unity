@@ -160,7 +160,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.6}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 10, y: -3.132}
+  m_AnchoredPosition: {x: 10, y: -3.1320038}
   m_SizeDelta: {x: -72, y: 34.264}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &60569526
@@ -1579,6 +1579,7 @@ GameObject:
   - component: {fileID: 1687157059}
   - component: {fileID: 1687157058}
   - component: {fileID: 1687157057}
+  - component: {fileID: 1687157060}
   m_Layer: 5
   m_Name: Decision 1
   m_TagString: Untagged
@@ -1649,7 +1650,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1687157058}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1687157060}
+        m_TargetAssemblyTypeName: ButtonClickerStats, Assembly-CSharp
+        m_MethodName: updatePlayerStats
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1687157058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1688,6 +1701,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687157055}
   m_CullTransparentMesh: 1
+--- !u!114 &1687157060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687157055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1e2afc4a25294c46a269c83af4f9277, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerStats: {fileID: 0}
+  maldad: 0
+  agresividad: 0
 --- !u!1 &1690114804
 GameObject:
   m_ObjectHideFlags: 0
@@ -1700,6 +1728,7 @@ GameObject:
   - component: {fileID: 1690114808}
   - component: {fileID: 1690114807}
   - component: {fileID: 1690114806}
+  - component: {fileID: 1690114809}
   m_Layer: 5
   m_Name: Decision 4
   m_TagString: Untagged
@@ -1770,7 +1799,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1690114807}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1687157060}
+        m_TargetAssemblyTypeName: ButtonClickerStats, Assembly-CSharp
+        m_MethodName: updatePlayerStats
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1690114807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1809,6 +1850,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1690114804}
   m_CullTransparentMesh: 1
+--- !u!114 &1690114809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1690114804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1e2afc4a25294c46a269c83af4f9277, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerStats: {fileID: 0}
+  maldad: 1
+  agresividad: 1
 --- !u!1 &1766407143
 GameObject:
   m_ObjectHideFlags: 0
@@ -2088,6 +2144,7 @@ GameObject:
   - component: {fileID: 1897417089}
   - component: {fileID: 1897417088}
   - component: {fileID: 1897417087}
+  - component: {fileID: 1897417090}
   m_Layer: 5
   m_Name: Decision 3
   m_TagString: Untagged
@@ -2158,7 +2215,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1897417088}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1687157060}
+        m_TargetAssemblyTypeName: ButtonClickerStats, Assembly-CSharp
+        m_MethodName: updatePlayerStats
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1897417088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2197,6 +2266,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1897417085}
   m_CullTransparentMesh: 1
+--- !u!114 &1897417090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897417085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1e2afc4a25294c46a269c83af4f9277, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerStats: {fileID: 0}
+  maldad: 0
+  agresividad: 1
 --- !u!1 &1930557019
 GameObject:
   m_ObjectHideFlags: 0
@@ -2209,6 +2293,7 @@ GameObject:
   - component: {fileID: 1930557023}
   - component: {fileID: 1930557022}
   - component: {fileID: 1930557021}
+  - component: {fileID: 1930557024}
   m_Layer: 5
   m_Name: Decision 2
   m_TagString: Untagged
@@ -2279,7 +2364,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1930557022}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1687157060}
+        m_TargetAssemblyTypeName: ButtonClickerStats, Assembly-CSharp
+        m_MethodName: updatePlayerStats
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1930557022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2318,6 +2415,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1930557019}
   m_CullTransparentMesh: 1
+--- !u!114 &1930557024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930557019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1e2afc4a25294c46a269c83af4f9277, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerStats: {fileID: 0}
+  maldad: 1
+  agresividad: 0
 --- !u!1 &2057334513
 GameObject:
   m_ObjectHideFlags: 0

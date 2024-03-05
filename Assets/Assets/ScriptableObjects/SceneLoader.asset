@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41a9415d9b993e542ab9c00a6c1fceab, type: 3}
   m_Name: SceneLoader
   m_EditorClassIdentifier: 
-  counter: 0
-  maxCounter: 2
+  counter: 2
+  maxCounter: 3
   memories:
   - dialogue: {fileID: 11400000, guid: aad31e0520c6a2f4dba288622cd433ca, type: 2}
     background: {fileID: 21300000, guid: 74d96b1df93f3314a92109270b60d948, type: 3}
   - dialogue: {fileID: 11400000, guid: e1d16cd4f36bd63499299a8d26e19a3e, type: 2}
     background: {fileID: 21300000, guid: 74d96b1df93f3314a92109270b60d948, type: 3}
+  - dialogue: {fileID: 11400000, guid: d6da9d5bd89a60e41a3dcee570d598ea, type: 2}
+    background: {fileID: 21300000, guid: 4899f55b0f3af8a4d80416c8329a864f, type: 3}

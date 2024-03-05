@@ -237,5 +237,12 @@ public class DialogueManager : MonoBehaviour
         
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.F2)) {
+            sceneLoader.counter++;
+        }
+    }
+
     
 }

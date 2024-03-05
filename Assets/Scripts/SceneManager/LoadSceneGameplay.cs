@@ -15,7 +15,7 @@ public class LoadSceneGameplay : MonoBehaviour
     void Update()
     {
         
-        if (Input.GetKey(KeyCode.F1)) {
+        if (Input.GetKeyDown(KeyCode.F1)) {
             SceneManager.LoadScene(2);
         }
         

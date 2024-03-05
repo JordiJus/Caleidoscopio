@@ -18,6 +18,7 @@ public class GameplayManager : MonoBehaviour
         Debug.Log(playerStats.maxHealth);
         Debug.Log(playerStats.health);
         Debug.Log(slider.value);
+        Debug.Log("Agresividad: " + playerStats.agresividad + " y Maldad: " + playerStats.maldad);
     }
 
     // Update is called once per frame
