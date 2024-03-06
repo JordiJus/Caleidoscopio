@@ -5,9 +5,11 @@ using UnityEngine;
 public class LoadPrefab : MonoBehaviour
 {
     public GameObject prefab;
+    public AudioSource hitEffect;
     // Start is called before the first frame update
     void Start()
     {
-        Instantiate(prefab, this.transform);
+        GameObject player = Instantiate(prefab, this.transform);
+        
     }
 }

@@ -20,6 +20,7 @@ public class Dialogue : ScriptableObject
             this.text = t;
         }
     }
+    public bool showObject = true;
 
     public List<Sentence> sentences = new List<Sentence>();
 

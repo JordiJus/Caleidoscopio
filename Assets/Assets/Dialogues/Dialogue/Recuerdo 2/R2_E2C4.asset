@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a3bd7e7f2d574a48b9bd188018a9e19, type: 3}
   m_Name: R2_E2C4
   m_EditorClassIdentifier: 
+  showObject: 1
   sentences:
   - name: 
     text: Appelgate busca algo en su bolsillo
@@ -22,4 +23,4 @@ MonoBehaviour:
     text: "Ni siquiera en estos momentos puedes dejar de ser un maleducado y un imb\xE9cil,
       de verdad que no te soporto, est\xE1s completamente loco."
   decision: {fileID: 0}
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: 21300000, guid: e114ac62252cad946a8a72a2123eb68e, type: 3}

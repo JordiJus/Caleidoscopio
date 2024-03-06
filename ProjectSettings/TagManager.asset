@@ -11,6 +11,8 @@ TagManager:
   - Wall
   - WallDown
   - PlayerStats
+  - HitEffect
+  - AudioManager
   layers:
   - Default
   - TransparentFX

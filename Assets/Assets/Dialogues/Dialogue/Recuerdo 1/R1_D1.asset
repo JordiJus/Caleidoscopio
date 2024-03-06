@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a3bd7e7f2d574a48b9bd188018a9e19, type: 3}
   m_Name: R1_D1
   m_EditorClassIdentifier: 
+  showObject: 0
   sentences:
   - name: Lespere
     text: "Hollis, \xBFpuedes escucharme? Es hora de hablar, amigo."

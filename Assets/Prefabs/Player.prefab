@@ -106,6 +106,7 @@ MonoBehaviour:
   acceleration: 6
   currentVerticalSpeed: 5
   animator: {fileID: 4280549131041028285}
+  hitEffect: {fileID: 0}
 --- !u!50 &4650942952390714082
 Rigidbody2D:
   serializedVersion: 4
@@ -186,6 +187,6 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.000000009934108, y: -0.0028221211}
-  m_Size: {x: 0.24331254, y: 0.26613474}
+  m_Offset: {x: -0.0067469478, y: 0.0018488765}
+  m_Size: {x: 0.22151467, y: 0.24641296}
   m_Direction: 0

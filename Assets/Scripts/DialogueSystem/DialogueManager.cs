@@ -39,6 +39,9 @@ public class DialogueManager : MonoBehaviour
     public GameObject RightSprite;
     public GameObject background;
     
+    public Button cuchilloButton;
+    public Button fotoButton;
+    public bool showHiddenObject;
 
     // Use this for initialization
     void Start()
@@ -58,7 +61,13 @@ public class DialogueManager : MonoBehaviour
         Debug.Log("Inside Dialogue");
         animator.SetBool("IsOpen", true);
         Debug.Log("Nuevo diálogo");
+        showHiddenObject = dialogue.showObject;
 
+        if(showHiddenObject && sceneLoader.counter == 0){
+            fotoButton.gameObject.SetActive(true);
+        } else {
+            fotoButton.gameObject.SetActive(false);
+        }
         
         background.GetComponent<Image>().sprite = dialogue.backgroundSprite;
 
@@ -87,6 +96,7 @@ public class DialogueManager : MonoBehaviour
             LeftSprite.SetActive(true);
             LeftSprite.GetComponent<Image>().sprite = HollisSprite;
         } else {
+            cuchilloButton.gameObject.SetActive(false);
             RightSprite.SetActive(true);
             if (name == "Director"){
                 RightSprite.GetComponent<Image>().sprite = DirectorSprite;
@@ -94,6 +104,9 @@ public class DialogueManager : MonoBehaviour
                 RightSprite.GetComponent<Image>().sprite = LespereSprite;
             } else if (name == "Applegate") {
                 RightSprite.GetComponent<Image>().sprite = ApplegateSprite;
+                if(sceneLoader.counter == 1 && showHiddenObject) {
+                    cuchilloButton.gameObject.SetActive(true);
+                }
             } else {
                 RightSprite.SetActive(false);
             }

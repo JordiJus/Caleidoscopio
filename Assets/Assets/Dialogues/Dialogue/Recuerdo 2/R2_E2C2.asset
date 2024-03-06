@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a3bd7e7f2d574a48b9bd188018a9e19, type: 3}
   m_Name: R2_E2C2
   m_EditorClassIdentifier: 
+  showObject: 1
   sentences:
   - name: Applegate
     text: "\xBFQu\xE9 me dices? \xBFNo me merezco mi puesto? \xBFY t\xFA s\xED? \xBFPor
       qu\xE9? \xBFPorque has sabido enga\xF1ar a los dem\xE1s con tus falsas promesas
       y tu falsa modestia?. \xA1No me hagas re\xEDr! Eres un impostor y un mediocre."
   decision: {fileID: 0}
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: 21300000, guid: e114ac62252cad946a8a72a2123eb68e, type: 3}

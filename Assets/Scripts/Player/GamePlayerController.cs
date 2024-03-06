@@ -13,11 +13,14 @@ public class GamePlayerController : MonoBehaviour
     private float lastDirection = 0; 
     [HideInInspector] public float currentVerticalSpeed = 0.5f;
     public Animator animator;
+    public GameObject hitEffect;
+    
 
 
     void Start()
     {
         playerStats = FindObjectOfType<PlayerStats>();
+        hitEffect = GameObject.FindGameObjectWithTag("HitEffect");
         animator.SetBool("GoingUp", true);
         rb2D = GetComponent<Rigidbody2D>();
     }
@@ -56,9 +59,11 @@ public class GamePlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        
         //Debug.Log("Asteroid in");
         if (collision.CompareTag("Asteroid"))
         {
+            hitEffect.GetComponent<AudioSource>().Play();
             playerStats.health--;
             Debug.Log(playerStats.health);
             Destroy(collision.gameObject);
